@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Lato&display=swap');
+
 * {
     background-color: grey;
+}
+/* style the header h1 */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'IM Fell English', sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
 }
