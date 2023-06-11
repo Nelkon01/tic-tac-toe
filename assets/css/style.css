@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Lato&display=swap');
 
 * {
-    background-color: grey;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 /* style the header h1 */
 h1 {
@@ -11,3 +13,25 @@ h1 {
     color: white;
     text-shadow: 2px 2px black;
 }
+/* style the container */
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: grey;
+}
+/* style the game board */
+#game-board {
+    background-color: rgb(244, 247, 250);
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px black;
+}
+/* style the cells */
