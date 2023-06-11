@@ -32,6 +32,38 @@ h1 {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px black; */
 }
 /* style the cells */
+.cells {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #051923;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.cells:nth-child(3n) {
+    border-right: none;
+}
+.cells:nth-child(n + 7) {
+    border-bottom: none;
+}
+/* style the button */
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
