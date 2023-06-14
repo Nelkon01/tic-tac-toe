@@ -5,6 +5,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --box-size: 200px;
+    --mark: calc(var(--box-size) * .9);
+}
 /* style the header h1 */
 h1 {
     text-align: center;
@@ -17,6 +21,7 @@ h1 {
 .container {
     padding: 40px;
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,15 +41,15 @@ h1 {
 }
 /* style the cells */
 .cells {
-    height: 200px;
-    width: 200px;
+    height: var(--box-size);
+    width: var(--box-size);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #051923;
-    font-size: 120px;
     border-right: 2px solid;
     border-bottom: 2px solid;
+    position: relative;
+    cursor: pointer;
 }
 .cells:nth-child(3n) {
     border-right: none;
@@ -52,6 +57,40 @@ h1 {
 .cells:nth-child(n + 7) {
     border-bottom: none;
 }
+.cells.x::before,
+.cells.x::after {
+    content: '';
+    width: calc(var(--mark) * .15);
+    height: var(--mark);
+    position: absolute;
+    background-color: #051923;
+}
+.cells.x::before {
+    transform: rotate(45deg);
+}
+.cells.x::after {
+    transform: rotate(-45deg);
+}
+.cells.o::before,
+.cells.o::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+}
+.cells.o::before {
+    width: var(--mark);
+    height: var(--mark);
+    background-color: #051923;
+}
+.cells.o::after {
+    width: calc(var(--mark) * .7);
+    height: calc(var(--mark) * .7);
+    background-color: rgb(244, 247, 250);
+}.cells.x,
+.cells.circle {
+    cursor: not-allowed§;
+}
+
 /* style the button */
 button {
     padding: 10px 20px;
