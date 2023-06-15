@@ -20,9 +20,11 @@ function handleClick() {
         this.textContent = 'X';
         this.classList.add('x');
     } else {
+        currentPlayer = 'Player 2';
         this.textContent = 'O';
         this.classList.add('o');
     }
     // to switch players
     currentPlayer = currentPlayer === 'Player 1' ? 'Player 2' : 'Player 1';
 }
+module.exports = {cells, resetBtn, message, handleClick, currentPlayer};
