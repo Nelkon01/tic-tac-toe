@@ -69,7 +69,25 @@ function checkWin() {
     }
     return !!(cells[2].textContent !== '' && cells[2].textContent === cells[4].textContent 
     && cells[4].textContent === cells[6].textContent);
-  }
-  
-  
+}
+// function to reset game
+resetBtn.addEventListener('click', () => {
+    cells.forEach(cells => {
+        cells.textContent = '';
+    });
+    message.textContent = '';
+    currentPlayer = 'Player 1';
+    cells.forEach(cells => {
+        cells.classList.remove('x');
+        cells.classList.remove('o');
+    });
+    cells.forEach(cells => {
+        cell.addEventListener('click', handleClick);
+    });
+});
+
+
+
+// export functions
+
 module.exports = {cells, resetBtn, message, handleClick, currentPlayer};
