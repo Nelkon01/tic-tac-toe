@@ -27,6 +27,12 @@ function handleClick() {
     
     if (checkWin()) {
         message.textContent = `${currentPlayer} wins!`;
+        disableCells();
+        return;
+    }
+
+    if (checkDraw()) {
+        message.textContent = "It's a tie!";
         return;
     }
     // to switch players
@@ -70,6 +76,23 @@ function checkWin() {
     return !!(cells[2].textContent !== '' && cells[2].textContent === cells[4].textContent 
     && cells[4].textContent === cells[6].textContent);
 }
+// function to check if theres a draw
+function checkDraw() {
+    let draw = true;
+    cells.forEach(cell => {
+        if (cell.textContent === '') {
+            draw = false;
+        }
+    });
+    return draw;
+}
+
+// function to disable the cells after win
+function disableCells() {
+    cells.forEach(cell => {
+        cell.removeEventListener('click', handleClick);
+    });
+}
 // function to reset game
 resetBtn.addEventListener('click', () => {
     cells.forEach(cells => {
@@ -82,12 +105,11 @@ resetBtn.addEventListener('click', () => {
         cells.classList.remove('o');
     });
     cells.forEach(cells => {
-        cell.addEventListener('click', handleClick);
+        cells.addEventListener('click', handleClick);
     });
 });
 
 
 
 // export functions
-
 module.exports = {cells, resetBtn, message, handleClick, currentPlayer};
