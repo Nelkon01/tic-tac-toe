@@ -5,6 +5,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url(/assets/images/background2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 :root {
     --box-size: 200px;
     --mark: calc(var(--box-size) * .9);
@@ -14,8 +19,9 @@ h1 {
     text-align: center;
     font-size: 50px;
     font-family: 'IM Fell English', sans-serif;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: #fff;
+    text-shadow: 2px 2px #7f535d;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 /* style the container */
 .container {
@@ -26,18 +32,17 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: grey;
 }
 /* style the game board */
 #game-board {
-    background-color: rgb(244, 247, 250);
+    background-color: #F1E9DA;
     margin: auto;
     width: 600px;
     height: 600px;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    /* box-shadow: 5px 5px 5px black; */
+    box-shadow: 5px 5px 5px black;
 }
 /* style the cells */
 .cells {
@@ -46,8 +51,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
     position: relative;
     cursor: pointer;
 }
@@ -63,7 +68,7 @@ h1 {
     width: calc(var(--mark) * .15);
     height: var(--mark);
     position: absolute;
-    background-color: #051923;
+    background-color: #777DA7;
 }
 .cells.x::before {
     transform: rotate(45deg);
@@ -80,29 +85,32 @@ h1 {
 .cells.o::before {
     width: var(--mark);
     height: var(--mark);
-    background-color: #051923;
+    background-color: #777DA7;
 }
 .cells.o::after {
     width: calc(var(--mark) * .7);
     height: calc(var(--mark) * .7);
-    background-color: rgb(244, 247, 250);
-}.cells.x,
-.cells.circle {
-    cursor: not-allowed§;
+    background-color: #F1E9DA;
+}
+.cells.x,
+.cells.o {
+    cursor: not-allowed;
 }
 
 /* style the button */
 button {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: var(--orange);
-    color: #333;
-    border-color: var(--orange);
+    background-color: #7F535D;
+    color: #F1E9DA;
+    border-color: #D3B57B;
     font-size: 18px;
     transition: 200ms transform;
     font-weight: 600;
 }
 button:hover {
     cursor: pointer;
-    transform: translateY(-2px);
+    background-color: #F1E9DA;
+    color: #7F535D;
+    transform: translateY(-2px);  
 }

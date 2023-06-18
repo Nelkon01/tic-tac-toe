@@ -56,4 +56,3 @@ test('the handle click switches players', () => {
     let expectedPlayer = currentPlayer === 'Player 1' ? 'O' : 'X';
     expect(testCell.textContent).toBe(expectedPlayer);
 });
-
