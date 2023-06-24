@@ -1,116 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Lato&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    background-image: url(/assets/images/background2.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../images/background2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 :root {
-    --box-size: 200px;
-    --mark: calc(var(--box-size) * .9);
+  --box-size: 200px;
+  --mark: calc(var(--box-size) * 0.9);
 }
 /* style the header h1 */
 h1 {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'IM Fell English', sans-serif;
-    color: #fff;
-    text-shadow: 2px 2px #7f535d;
-    background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 50px;
+  font-family: "IM Fell English", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px #051923;
+  background-color: rgba(0, 181, 54, 0.5);
 }
 /* style the container */
 .container {
-    padding: 40px;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  padding: 40px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* style the game board */
 #game-board {
-    background-color: #F1E9DA;
-    margin: auto;
-    width: 600px;
-    height: 600px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: 5px 5px 5px black;
+  background-color: #f1e9da;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px black;
 }
 /* style the cells */
 .cells {
-    height: var(--box-size);
-    width: var(--box-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
-    position: relative;
-    cursor: pointer;
+  height: var(--box-size);
+  width: var(--box-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  position: relative;
+  cursor: pointer;
 }
 .cells:nth-child(3n) {
-    border-right: none;
+  border-right: none;
 }
 .cells:nth-child(n + 7) {
-    border-bottom: none;
+  border-bottom: none;
 }
 .cells.x::before,
 .cells.x::after {
-    content: '';
-    width: calc(var(--mark) * .15);
-    height: var(--mark);
-    position: absolute;
-    background-color: #777DA7;
+  content: "";
+  width: calc(var(--mark) * 0.15);
+  height: var(--mark);
+  position: absolute;
+  background-color: #777da7;
 }
 .cells.x::before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .cells.x::after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .cells.o::before,
 .cells.o::after {
-    content: '';
-    border-radius: 50%;
-    position: absolute;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
 }
 .cells.o::before {
-    width: var(--mark);
-    height: var(--mark);
-    background-color: #777DA7;
+  width: var(--mark);
+  height: var(--mark);
+  background-color: #777da7;
 }
 .cells.o::after {
-    width: calc(var(--mark) * .7);
-    height: calc(var(--mark) * .7);
-    background-color: #F1E9DA;
+  width: calc(var(--mark) * 0.7);
+  height: calc(var(--mark) * 0.7);
+  background-color: #f1e9da;
 }
 .cells.x,
 .cells.o {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 /* style the button */
 button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #7F535D;
-    color: #F1E9DA;
-    border-color: #D3B57B;
-    font-size: 18px;
-    transition: 200ms transform;
-    font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #7f535d;
+  color: #f1e9da;
+  border-color: #d3b57b;
+  font-size: 18px;
+  transition: 200ms transform;
+  font-weight: 600;
 }
 button:hover {
-    cursor: pointer;
-    background-color: #F1E9DA;
-    color: #7F535D;
-    transform: translateY(-2px);  
+  cursor: pointer;
+  background-color: #f1e9da;
+  color: #7f535d;
+  transform: translateY(-2px);
 }
