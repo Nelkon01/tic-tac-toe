@@ -26,6 +26,13 @@ function handleClick() {
     }
     
     if (checkWin()) {
+        // change the color of the winning marks based on the current player
+        let winningClass = currentPlayer === 'Player 1' ? 'x' : 'o';
+        cells.forEach(cell => {
+            if (cell.classList.contains(winningClass)) {
+                cell.classList.add(`win-${winningClass}`);
+            }
+        });
         document.getElementById('winningMessage').textContent = `${currentPlayer} wins!`;
         $('#winningModal').modal('show');
         disableCells();
