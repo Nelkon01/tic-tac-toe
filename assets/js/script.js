@@ -1,16 +1,16 @@
 const cells = document.querySelectorAll('.cells');
 const resetBtn = document.getElementById('reset');
-const message = document.getElementById('message');
 
 // Player 1 = X
 // Player 2 = O
 let currentPlayer = 'Player 1';
 
 
-cells.forEach(cells => {
-    cells.addEventListener('click', handleClick);
+cells.forEach(cell => {
+    cell.addEventListener('click', handleClick);
 });
-// function to handle click
+
+// Function to handle clicks on the board.
 function handleClick() {
     if (this.textContent !== '') {
         return;
@@ -26,17 +26,23 @@ function handleClick() {
     }
     
     if (checkWin()) {
-        message.textContent = `${currentPlayer} wins!`;
+        document.getElementById('winningMessage').textContent = `${currentPlayer} wins!`;
+        $('#winningModal').modal('show');
         disableCells();
         return;
     }
 
     if (checkDraw()) {
-        message.textContent = "It's a tie!";
+        document.getElementById('winningMessage').textContent = "It's a tie!";
+        $('#winningModal').modal('show');
+        disableCells();
         return;
     }
+    
     // to switch players
     currentPlayer = currentPlayer === 'Player 1' ? 'Player 2' : 'Player 1';
+    document.getElementById('currentPlayerText').textContent = (`${currentPlayer}'s turn`);
+    $('#currentPlayerModal').modal('show');
 }
 // function to check if win
 function checkWin() {
@@ -95,21 +101,18 @@ function disableCells() {
 }
 // function to reset game
 resetBtn.addEventListener('click', () => {
-    cells.forEach(cells => {
-        cells.textContent = '';
+    cells.forEach(cell => {
+        cell.textContent = '';
+        cell.classList.remove('x');
+        cell.classList.remove('o');
+        cell.addEventListener('click', handleClick);
     });
-    message.textContent = '';
     currentPlayer = 'Player 1';
-    cells.forEach(cells => {
-        cells.classList.remove('x');
-        cells.classList.remove('o');
-    });
-    cells.forEach(cells => {
-        cells.addEventListener('click', handleClick);
-    });
+    $('#currentPlayer').text(`${currentPlayer}'s turn`);
+    document.getElementById('winningMessage').textContent = '';
 });
 
 
 
 // export functions
-module.exports = {cells, resetBtn, message, handleClick, currentPlayer};
+// module.exports = {cells, resetBtn, message, handleClick, currentPlayer};
