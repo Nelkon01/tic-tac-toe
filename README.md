@@ -183,6 +183,8 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 
 ### Bugs
 
+- Encountered bugs when trying to implement a functionality that will change the color of winning cells player mark when win condition has been bet. It wasn't displaying the chosen color at first, and retained the winning color class after reset bnutton had been clicked. 
+- FIX: Updated the checkwin function in javascript to store the cells into an array, and then added a highlight cells function to add the winning class styling to the winning cells array.
 
 
 
