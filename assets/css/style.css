@@ -2,29 +2,29 @@
 
 body {
     background-color: #f1e9da;
-  }
+}
   
-  .container {
+.container {
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  h1 {
+}
+/* Styke the heading */
+h1 {
     font-size: 40px;
     margin-bottom: 40px;
     font-family: "IM Fell English", sans-serif;
-    
-  }
-  
-  .buttons {
+
+}
+/* Style the buttons on the welcome page */
+.buttons {
     display: flex;
     gap: 20px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 18px;
@@ -33,16 +33,16 @@ body {
     border-color: #d3b57b;
     transition: 200ms transform;
     font-weight: 600;
-  }
+}
   
-  button:hover {
+button:hover {
     cursor: pointer;
     background-color: #f1e9da;
     color: #7f535d;
     transform: translateY(-2px);
-  }
+}
   
-  .hidden {
+.hidden {
     display: none;
-  }
+}
   
