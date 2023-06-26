@@ -1,6 +1,6 @@
 const {test, expect} = require('@jest/globals');
 const {JSDOM} = require('jsdom');
-let {cells, resetBtn, message, handleClick, currentPlayer} = require('./script.js');
+let {cells, resetBtn, message, handleClick, currentPlayer} = require('./game.js');
 
 
 const {window} = new JSDOM(`
