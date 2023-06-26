@@ -45,4 +45,26 @@ button:hover {
 .hidden {
     display: none;
 }
+
+#instructions-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: justify;
+    margin-top: 40px;
+}
+h2 {
+    color: #7f535d;
+    text-transform: capitalize;
+    text-decoration: wavy;
+    font-family: "Lato", sans-serif;
+
+}
+
+li {
+    list-style-type: upper-roman;
+    font-size: 18px;
+    font-weight: 600;
+    color: #7f535d;
+}
   

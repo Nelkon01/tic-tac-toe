@@ -93,7 +93,6 @@ function checkWin() {
         winningCells = [cells[2], cells[4], cells[6]];
       return true;
     }
-
     winningCells = null;
     return false;
 }
