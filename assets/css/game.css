@@ -23,6 +23,7 @@ h1 {
   text-shadow: 2px 2px #051923;
   background-color: rgba(0, 181, 54, 0.5);
 }
+
 /* style the container */
 .container {
   padding: 40px;
@@ -34,6 +35,7 @@ h1 {
   flex-direction: column;
 }
 /* style the game board */
+
 #game-board {
   background-color: #f1e9da;
   margin: auto;
@@ -97,9 +99,6 @@ h1 {
   cursor: not-allowed;
 }
 
-
-
-
 /* style the button */
 button {
   padding: 10px 20px;
@@ -129,4 +128,27 @@ button:hover {
   width: calc(var(--mark) * 0.7);
   height: calc(var(--mark) * 0.7);
   background-color: #f1e9da;
+}
+/* to make the game responsive to screens below 768px */
+@media screen and (max-width: 768px) {
+  :root {
+    --box-size: 150px;
+    --mark: calc(var(--box-size) * 0.8);
+  }
+  .container {
+    padding: 20px;
+  }
+  #game-board {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cells {
+    height: calc(var(--box-size) * 0.89);
+    width: calc(var(--box-size) * 0.88);
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+  }
 }
