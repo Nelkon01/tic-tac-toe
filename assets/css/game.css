@@ -117,6 +117,7 @@ button:hover {
   color: #7f535d;
   transform: translateY(-2px);
 }
+
 /* Change mark color for winning cells */
 #game-board .cells.win-x::before,
 #game-board .cells.win-x::after {

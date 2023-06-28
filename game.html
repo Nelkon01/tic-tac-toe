@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="header" src="index.html">Tic - Tac - Toe</h1>
+      <h1 id="header">Tic - Tac - Toe</h1>
       <div id="game-board">
         <div class="cells" id="cell-1" data-input></div>
         <div class="cells" id="cell-2" data-input></div>
@@ -103,7 +103,36 @@
           </div>
         </div>
       </div>
-
+      <!-- How-to-play Modal -->
+      <button type="button" data-bs-toggle="modal" data-bs-target="#how-to-play">How to Play</button>
+      <div class="modal fade" id="how-to-play" tabindex="-1" aria-labelledby="how-to-play">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>The game is played on a 3x3 board grid.</li>
+                <li>
+                  Player 1 is X, and Player 2 is O. Players take turns putting their
+                  marks in empty squares.
+                </li>
+                <li>
+                  The first player to get 3 of their marks in a row (up, down,
+                  across, or diagonally) wins.
+                </li>
+                <li>
+                  If all 9 squares are full and no player has won, the game ends in
+                  a tie.
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <button id="reset">Reset Game</button>
     </div>
 
