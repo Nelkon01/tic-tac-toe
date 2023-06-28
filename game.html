@@ -30,28 +30,36 @@
         <div class="cells" id="cell-9" data-input></div>
       </div>
 
-      <!-- Current Player Modal -->
+      <!-- Tie Game Modal -->
       <div
         class="modal fade"
-        id="currentPlayerModal"
+        id="tieModal"
         tabindex="-1"
         role="dialog"
-        aria-labelledby="currentPlayerModalLabel"
-        aria-hidden="true"
+        aria-labelledby="tieModalLabel"
+        aria-modal="true"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
-            <div class="modal-body">
-              <span id="currentPlayerText"></span>
-            </div>
-            <div class="modal-footer">
+            <div
+              class="modal-header img"
+              style="background-image: url(assets/images/tie-background.jpg)"
+            ></div>
+            <div
+              class="modal-body pt-md-0 pb-5 px-4 px-md-5 text-center text-black"
+            >
+              <div
+                class="icon d-flex align-items-center justify-content-center bg-dark"
+              >
+                <img src="assets/images/tie.png" alt="" class="img-fluid" />
+              </div>
+              <span class="mb-2" id="tieMessage"></span>
               <button
                 type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+                class="btn-close d-flex"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
         </div>
@@ -73,16 +81,7 @@
               style="
                 background-image: url(assets/images/winner-background2.jpg);
               "
-            >
-              <button
-                type="button"
-                class="btn-close d-flex align-items-center justify-content-center"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true" class="ion-ios-close"></span>
-              </button>
-            </div>
+            ></div>
             <div
               class="modal-body pt-md-0 pb-5 px-4 px-md-5 text-center"
               id="win-body"

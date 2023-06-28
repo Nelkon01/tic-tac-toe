@@ -2,8 +2,7 @@ const cells = document.querySelectorAll('.cells');
 const resetBtn = document.getElementById('reset');
 let winningCells = null;
 
-// Player 1 = X
-// Player 2 = O
+
 let currentPlayer = 'Player 1';
 
 
@@ -35,16 +34,14 @@ function handleClick() {
     }
 
     if (checkDraw()) {
-        document.getElementById('winningMessage').textContent = "It's a tie!";
-        $('#winningModal').modal('show');
+        document.getElementById('tieMessage').textContent = "It's a tie!";
+        $('#tieModal').modal('show');
         disableCells();
         return;
     }
 
     // to switch players
     currentPlayer = currentPlayer === 'Player 1' ? 'Player 2' : 'Player 1';
-    document.getElementById('currentPlayerText').textContent = (`${currentPlayer}'s turn`);
-    $('#currentPlayerModal').modal('show');
 }
 // function to check if win
 function checkWin() {
@@ -134,8 +131,6 @@ resetBtn.addEventListener('click', () => {
         cell.addEventListener('click', handleClick);
     });
     currentPlayer = 'Player 1';
-    document.getElementById('currentPlayerText').textContent = (`${currentPlayer}'s turn`);
-    $('#currentPlayerModal').modal('show');
     document.getElementById('winningMessage').textContent = '';
     winningCells = null;
 });

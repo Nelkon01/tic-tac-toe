@@ -2,6 +2,10 @@
 
 Project Description
 
+Tic-Tac-Toe is a simple two-player game, and only two players can play at a time. This game is also known as Noughts and Crosses or Xs and Os game. One player plays with X and the other player plays with O. In this game we have a board consisting of a 3X3 grid, and in this case player 1 is X and Player 2 is O.
+
+
+
 ![Live Website Screenshot](assets/images/)
 The above website screenshot was generated using [ui.dev/amiresponsive](https://ui.dev/amiresponsive)
 
@@ -210,4 +214,8 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 - Favicon image was <a href="https://www.flaticon.com/free-icons/tic-tac-toe" title="tic tac toe icons">Tic tac toe icons created by Freepik - Flaticon</a>
 - The image on winning modal was <a href="https://www.freepik.com/free-vector/hand-holding-winner-trophy-cup-award_3949342.htm#query=win&position=20&from_view=search&track=sph">Image by macrovector</a> on Freepik
 - Background image on winning modal was <a href="https://www.freepik.com/free-vector/podium-with-falling-confetti-round-gold-shiny_32230557.htm#query=winner%20background&position=26&from_view=search&track=ais">Image by upklyak</a> on Freepik
+- Tie background image on tie modal was <a href="https://www.freepik.com/free-vector/teams-competing-prize-people-playing-tug-war-pulling-rope-with-golden-cup-flat-vector-illustration-competition-contest-concept_10613684.htm#query=tie%20game&position=8&from_view=search&track=ais">Image by pch.vector</a> on Freepik
 ### Acknowledgements
+
+- Bootstrap modal inspriration was gotten from <a href="https://colorlib.com/wp/bootstrap-modals/">colorlib</a>
+- This website was helpful to reduce and resize images <a href="https://www.reduceimages.com/">reduceimages</a>
