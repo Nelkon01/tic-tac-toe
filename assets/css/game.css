@@ -174,3 +174,61 @@ button:hover {
     width: calc(var(--box-size) * 0.83);
   }
 }
+
+/* Styling for winner modal */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #f1e9da;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.modal-content .modal-header {
+  padding: 0;
+  border: none;
+  height: 230px;
+  position: relative;
+  z-index: 0;
+}
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.modal-content button.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  color: #fff;
+}
+.modal-content .modal-body {
+  border: none;
+  overflow: hidden;
+  margin-top: -180px;
+  z-index: 2;
+}
+.text-center {
+  text-align: center !important;
+}
+.modal-content .modal-body h2 {
+  font-weight: 700;
+  color: #fff;
+}
+.modal-content .modal-body .icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+

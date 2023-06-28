@@ -64,21 +64,42 @@
         tabindex="-1"
         role="dialog"
         aria-labelledby="winningModalLabel"
-        aria-hidden="true"
+        aria-modal="true"
       >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <span id="winningMessage"></span>
-            </div>
-            <div class="modal-footer">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content" id="win-modal-content">
+            <div
+              class="modal-header img"
+              style="
+                background-image: url(assets/images/winner-background2.jpg);
+              "
+            >
               <button
                 type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+                class="btn-close d-flex align-items-center justify-content-center"
+                data-bs-dismiss="modal"
+                aria-label="Close"
               >
-                Close
+                <span aria-hidden="true" class="ion-ios-close"></span>
               </button>
+            </div>
+            <div
+              class="modal-body pt-md-0 pb-5 px-4 px-md-5 text-center"
+              id="win-body"
+            >
+              <h2>Winner!</h2>
+              <div
+                class="icon d-flex align-items-center justify-content-center"
+              >
+                <img src="assets/images/winner1.png" alt="" class="img-fluid" />
+              </div>
+              <span class="mb-2" id="winningMessage"></span>
+              <button
+                type="button"
+                class="btn-close d-flex"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
         </div>
