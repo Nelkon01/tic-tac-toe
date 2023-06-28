@@ -1,70 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Lato&display=swap");
 
 body {
-    background-color: #f1e9da;
+  background-color: #f1e9da;
 }
-  
-.container {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-/* Styke the heading */
-h1 {
-    font-size: 40px;
-    margin-bottom: 40px;
-    font-family: "IM Fell English", sans-serif;
 
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Style the heading */
+h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-family: "IM Fell English", sans-serif;
 }
 /* Style the buttons on the welcome page */
 .buttons {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    background-color: #7f535d;
-    color: #f1e9da;
-    border-color: #d3b57b;
-    transition: 200ms transform;
-    font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #7f535d;
+  color: #f1e9da;
+  border-color: #d3b57b;
+  transition: 200ms transform;
+  font-weight: 600;
 }
-  
+
 button:hover {
-    cursor: pointer;
-    background-color: #f1e9da;
-    color: #7f535d;
-    transform: translateY(-2px);
+  cursor: pointer;
+  background-color: #f1e9da;
+  color: #7f535d;
+  transform: translateY(-2px);
 }
-  
+
 .hidden {
-    display: none;
+  display: none;
 }
 
 #instructions-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: justify;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: justify;
+  margin-top: 40px;
 }
 h2 {
-    color: #7f535d;
-    text-transform: capitalize;
-    text-decoration: wavy;
-    font-family: "Lato", sans-serif;
-
+  color: #7f535d;
+  text-transform: capitalize;
+  text-decoration: wavy;
+  font-family: "Lato", sans-serif;
 }
 
 li {
-    list-style-type: upper-roman;
-    font-size: 18px;
-    font-weight: 600;
-    color: #7f535d;
+  list-style-type: upper-roman;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7f535d;
 }
-  

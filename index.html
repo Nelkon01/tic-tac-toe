@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/tic-tac-toe.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Tic Tac Toe</title>
-</head>
-
-<body>
-  <div class="container">
-    <h1 id="header">Welcome to Tic - Tac - Toe</h1>
-    <div class="buttons">
-      <button id="instructions-btn">How to Play</button>
-      <button id="game-start-btn">Start Game</button>
-    </div>
-    <div class="hidden" id="game-instructions">
-      <div id="instructions-content">
-        <h2>How to Play Tic-Tac-Toe</h2>
-        <ul>
-          <li>The game is played on a 3x3 board grid.</li>
-          <li>Player 1 is X, and Player 2 is O. Players take turns putting their marks in empty squares.</li>
-          <li>The first player to get 3 of their marks in a row (up, down, across, or diagonally) wins.</li>
-          <li>If all 9 squares are full and no player has won, the game ends in a tie.</li>
-        </ul>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Welcome to Tic - Tac - Toe</h1>
       </div>
-    </div>  
-  </div>
-   
-  <script src="assets/js/script.js"></script>
-</body>
 
+      <div class="buttons">
+        <button id="instructions-btn">How to Play</button>
+        <button id="game-start-btn">Start Game</button>
+      </div>
+      <div class="hidden" id="game-instructions">
+        <div id="instructions-content">
+          <h2>How to Play Tic-Tac-Toe</h2>
+          <ul>
+            <li>The game is played on a 3x3 board grid.</li>
+            <li>
+              Player 1 is X, and Player 2 is O. Players take turns putting their
+              marks in empty squares.
+            </li>
+            <li>
+              The first player to get 3 of their marks in a row (up, down,
+              across, or diagonally) wins.
+            </li>
+            <li>
+              If all 9 squares are full and no player has won, the game ends in
+              a tie.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

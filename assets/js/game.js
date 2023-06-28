@@ -25,7 +25,7 @@ function handleClick() {
         this.textContent = 'O';
         this.classList.add('o');
     }
-    
+
     if (checkWin()) {
         document.getElementById('winningMessage').textContent = `${currentPlayer} wins!`;
         $('#winningModal').modal('show');
@@ -40,7 +40,7 @@ function handleClick() {
         disableCells();
         return;
     }
-    
+
     // to switch players
     currentPlayer = currentPlayer === 'Player 1' ? 'Player 2' : 'Player 1';
     document.getElementById('currentPlayerText').textContent = (`${currentPlayer}'s turn`);
@@ -49,49 +49,49 @@ function handleClick() {
 // function to check if win
 function checkWin() {
     // Check for horizontal win
-    if (cells[0].textContent !== '' && cells[0].textContent === cells[1].textContent 
-    && cells[1].textContent === cells[2].textContent) {
+    if (cells[0].textContent !== '' && cells[0].textContent === cells[1].textContent
+        && cells[1].textContent === cells[2].textContent) {
         winningCells = [cells[0], cells[1], cells[2]];
-      return true;
+        return true;
     }
-    if (cells[3].textContent !== '' && cells[3].textContent === cells[4].textContent 
-    && cells[4].textContent === cells[5].textContent) {
+    if (cells[3].textContent !== '' && cells[3].textContent === cells[4].textContent
+        && cells[4].textContent === cells[5].textContent) {
         winningCells = [cells[3], cells[4], cells[5]];
         return true;
     }
-    if (cells[6].textContent !== '' && cells[6].textContent === cells[7].textContent 
-    && cells[7].textContent === cells[8].textContent) {
+    if (cells[6].textContent !== '' && cells[6].textContent === cells[7].textContent
+        && cells[7].textContent === cells[8].textContent) {
         winningCells = [cells[6], cells[7], cells[8]];
-      return true;
+        return true;
     }
-  
+
     // Check for vertical win
-    if (cells[0].textContent !== '' && cells[0].textContent === cells[3].textContent 
-    && cells[3].textContent === cells[6].textContent) {
+    if (cells[0].textContent !== '' && cells[0].textContent === cells[3].textContent
+        && cells[3].textContent === cells[6].textContent) {
         winningCells = [cells[0], cells[3], cells[6]];
-      return true;
+        return true;
     }
-    if (cells[1].textContent !== '' && cells[1].textContent === cells[4].textContent 
-    && cells[4].textContent === cells[7].textContent) {
+    if (cells[1].textContent !== '' && cells[1].textContent === cells[4].textContent
+        && cells[4].textContent === cells[7].textContent) {
         winningCells = [cells[1], cells[4], cells[7]];
-      return true;
+        return true;
     }
-    if (cells[2].textContent !== '' && cells[2].textContent === cells[5].textContent 
-    && cells[5].textContent === cells[8].textContent) {
+    if (cells[2].textContent !== '' && cells[2].textContent === cells[5].textContent
+        && cells[5].textContent === cells[8].textContent) {
         winningCells = [cells[2], cells[5], cells[8]];
-      return true;
+        return true;
     }
-  
+
     // Check for diagonal win
-    if (cells[0].textContent !== '' && cells[0].textContent === cells[4].textContent 
-    && cells[4].textContent === cells[8].textContent) {
+    if (cells[0].textContent !== '' && cells[0].textContent === cells[4].textContent
+        && cells[4].textContent === cells[8].textContent) {
         winningCells = [cells[0], cells[4], cells[8]];
-      return true;
+        return true;
     }
     if (cells[2].textContent !== '' && cells[2].textContent === cells[4].textContent
-    && cells[4].textContent === cells[6].textContent) {
+        && cells[4].textContent === cells[6].textContent) {
         winningCells = [cells[2], cells[4], cells[6]];
-      return true;
+        return true;
     }
     winningCells = null;
     return false;

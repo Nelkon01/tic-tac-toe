@@ -1,9 +1,9 @@
-const {test, expect} = require('@jest/globals');
-const {JSDOM} = require('jsdom');
-let {cells, resetBtn, message, handleClick, currentPlayer} = require('./game.js');
+const { test, expect } = require('@jest/globals');
+const { JSDOM } = require('jsdom');
+let { cells, resetBtn, message, handleClick, currentPlayer } = require('./game.js');
 
 
-const {window} = new JSDOM(`
+const { window } = new JSDOM(`
     <!DOCTYPE html>
     <html>
     <body>
@@ -34,25 +34,25 @@ global.navigator = {
 };
 // Test for current player is Player 1
 test('Initial current player is Player 1', () => {
-    expect(currentPlayer).toBe('Player 1');
+  expect(currentPlayer).toBe('Player 1');
 });
 // test for click works
 test('the handle click updtaes cell text content and class', () => {
-    testCell = document.createElement('div');
-    testCell.textContent = '';
+  testCell = document.createElement('div');
+  testCell.textContent = '';
 
-    currentPlayer = 'Player 1';
-    handleClick.call(testCell);
-    expect(testCell.textContent).toBe('X');
-    expect(testCell.classList.contains('x')).toBe(true);
+  currentPlayer = 'Player 1';
+  handleClick.call(testCell);
+  expect(testCell.textContent).toBe('X');
+  expect(testCell.classList.contains('x')).toBe(true);
 });
 // test for switch players
 test('the handle click switches players', () => {
-    testCell = document.createElement('div');
-    testCell.textContent = '';
+  testCell = document.createElement('div');
+  testCell.textContent = '';
 
-    currentPlayer = 'Player 1';
-    handleClick.call(testCell);
-    let expectedPlayer = currentPlayer === 'Player 1' ? 'O' : 'X';
-    expect(testCell.textContent).toBe(expectedPlayer);
+  currentPlayer = 'Player 1';
+  handleClick.call(testCell);
+  let expectedPlayer = currentPlayer === 'Player 1' ? 'O' : 'X';
+  expect(testCell.textContent).toBe(expectedPlayer);
 });

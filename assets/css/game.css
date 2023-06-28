@@ -14,6 +14,7 @@ body {
   --box-size: 200px;
   --mark: calc(var(--box-size) * 0.9);
 }
+
 /* style the header h1 */
 h1 {
   text-align: center;
@@ -119,10 +120,10 @@ button:hover {
 /* Change mark color for winning cells */
 #game-board .cells.win-x::before,
 #game-board .cells.win-x::after {
-  background-color: #D3B47B;
+  background-color: #d3b47b;
 }
-#game-board .cells.win-o::before{
-  background-color: #D3B47B;
+#game-board .cells.win-o::before {
+  background-color: #d3b47b;
 }
 #game-board .cells.win-o::after {
   width: calc(var(--mark) * 0.7);

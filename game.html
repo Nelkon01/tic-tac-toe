@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/game.css">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/images/tic-tac-toe.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css" />
 
     <title>Tic Tac Toe</title>
   </head>
   <body>
     <div class="container">
-      <h1 id="header">Tic - Tac - Toe</h1>
+      <h1 id="header" src="index.html">Tic - Tac - Toe</h1>
       <div id="game-board">
         <div class="cells" id="cell-1" data-input></div>
         <div class="cells" id="cell-2" data-input></div>
@@ -25,42 +29,70 @@
         <div class="cells" id="cell-8" data-input></div>
         <div class="cells" id="cell-9" data-input></div>
       </div>
-    
-    <!-- Current Player Modal -->
-    <div class="modal fade" id="currentPlayerModal" tabindex="-1" role="dialog" aria-labelledby="currentPlayerModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <span id="currentPlayerText"></span>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Winning Player Modal -->
-    <div class="modal fade" id="winningModal" tabindex="-1" role="dialog" aria-labelledby="winningModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <span id="winningMessage"></span>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <!-- Current Player Modal -->
+      <div
+        class="modal fade"
+        id="currentPlayerModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="currentPlayerModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <span id="currentPlayerText"></span>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  
-      
+
+      <!-- Winning Player Modal -->
+      <div
+        class="modal fade"
+        id="winningModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="winningModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <span id="winningMessage"></span>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <button id="reset">Reset Game</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="assets/js/game.js"></script>  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/game.js"></script>
   </body>
 </html>

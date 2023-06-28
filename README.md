@@ -207,5 +207,6 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 ### Media
 
 - Background Image was <a href="https://www.freepik.com/free-vector/memphis-seamless-pattern-background_16396978.htm#query=tic%20tac%20toe%20Background&position=0&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik
+- Favicon image was <a href="https://www.flaticon.com/free-icons/tic-tac-toe" title="tic tac toe icons">Tic tac toe icons created by Freepik - Flaticon</a>
 
 ### Acknowledgements
