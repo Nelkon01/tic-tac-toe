@@ -236,3 +236,41 @@ button:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* Style the footer */
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #7f535d;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer li {
+  display: inline-block; 
+  margin: 5px; 
+}
+footer a {
+  text-decoration: none;
+  color: #f1e9da;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .footer-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #f1e9da;
+  color: #7f535d;
+}
+footer .footer-btn:hover {
+  cursor: pointer;
+  background-color: #7f535d;
+  color: #f1e9da;
+}
+footer .footer-btn i {
+  margin-right: 5px;
+}
