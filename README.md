@@ -67,11 +67,11 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
         
 -   ## **Wireframes**
     ### Mobile
-    ![Mobile Wireframe](assets/images/)
+    ![Mobile Wireframe](assets/images/wireframe-mobile.png)
     ### Tablet
-    ![Tablet Wireframe](assets/images/)
+    ![Tablet Wireframe](assets/images/wireframe-ipad.png)
     ### PC
-    ![PC Wireframe](assets/images/)
+    ![PC Wireframe](assets/images/Wireframe.png)
 -   ## **Structure**
 
    
@@ -79,10 +79,13 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 
 -   ## **Design**
     -   ### Colour Scheme
+    ![Color Pallete](assets/images/color%20palette.png)
         
     -   ### Typography
+    The font used in the for the header is the [IM Fell English](https://fonts.google.com/specimen/IM+Fell+English) with Sans Serif as the fall back font in case for any reason the font isn't being imported into the site correctly or browser compatibility issues. I think the font is also fits in nicelyb with the design of the webgame.
         
     -   ### Imagery
+      Imagery is important. the game uses a background image on the game page which goes nicely with the theme and important parts of the game. The images used in the modals to give users any messages are also fit for the whatever message is being passed.
       
 
 # **Features**
