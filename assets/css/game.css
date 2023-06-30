@@ -20,12 +20,11 @@ body {
   font-family: "IM Fell English", sans-serif;
   background-color: #7f535d;
   color: #fff;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 12px;
   border-radius: 10px;
   outline: 2px outset#DAC1A3;
   text-shadow: 2px 2px #D3B47B;
-
+  margin: 10px;
 }
 
 /* style the container */
@@ -104,6 +103,10 @@ body {
 }
 
 /* style the button */
+.buttons {
+  align-items: center;
+  margin-top: 10px;
+}
 button {
   padding: 10px 20px;
   border-radius: 10px;
@@ -163,8 +166,9 @@ button:hover {
     --box-size: 120px;
     --mark: calc(var(--box-size) * 0.7);
   }
-  h1 {
+  .header{
     font-size: 40px;
+    padding: 10px;
   }
   .container {
     padding: 10px;
