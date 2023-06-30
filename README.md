@@ -6,10 +6,12 @@ Tic-Tac-Toe is a simple two-player game, and only two players can play at a time
 
 
 
-![Live Website Screenshot](assets/images/)
+![Live Website Screenshot](assets/images/responsive-sc2.png)
+![Live Website Screenshot](assets/images/responsive-sc1.png)
+
 The above website screenshot was generated using [ui.dev/amiresponsive](https://ui.dev/amiresponsive)
 
-To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.github.io/)
+To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.github.io/tic-tac-toe)
 
 # Contents
 
@@ -44,17 +46,23 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 # **User Experience (UX)**
 
 -   ## **User stories**
+-   ### First Time Visitor Goals:
+  1. As a first-time users, I want to understand that it is a two player game.
+  2. As first-time users, we want to understand how to play the game.
+  3. As first-time users, we want to easily navigate and find the game board.
+  4. As first-time users, we want clear instructions on how to make moves and win the game.
+  5. As first-time users, we want a visually appealing and intuitive interface for an enjoyable gaming experience.
+  6. As first-time users, we want to be able to reset the game if we want to start over.
+  7. As first-time users, we want to easily know which of the players has won or if there is a tie.
 
-    -   ### First Time Visitor Goals:
-    As a first time visitor, I want to be able play the tic tac toe game with my friend
+  -   ### Returning Visitor Goals:
+  1. As returning visitors, we want to quickly start a new game without any hassle.
+  2. As returning visitors, we want to easily find the "How to Play" instructions in case theres a need for refresher.
+  4. As returning visitors, we want to see if any updates or improvements have been made to the game since our last visit.
 
-        
+- ### Frequent User Goals:
+1. As frequent users, We want to compete against another player to test our skills.
 
-    -   ### Returning Visitor Goals:
-
-     
-
-    -   ### Frequent User Goals:
 
         
 -   ## **Wireframes**
