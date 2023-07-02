@@ -162,64 +162,142 @@ To fufil the requirements of my portfolio project two, I am developing this web 
 -   [JavaScript](https://www.javascript.com/)
 
 ## **Frameworks, Libraries & Programs Used**
-### **Bootstrap** 
-Used for utilizing pre-designed CSS styles and components for a responsive layout.
-### **jQuery**
-Used for simplifying DOM manipulation and event handling.
-### **Git**
-Used for version control and managing the project's source code.
-### **GitHub**
-Used for hosting the project repository.
+### **[Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)** 
+- Used for utilizing pre-designed CSS styles and components for a responsive layout.
+### **[jQuery](https://jquery.com/)**
+- Used for simplifying DOM manipulation and event handling.
+### **[Git](https://git-scm.com/)**
+- Used for version control and managing the project's source code.
+### **[GitHub](https://github.com)**
+- Used for hosting the project repository.
 
-### **Visual Studio Code** 
-A popular code editor used for developing the game.
+### **[Visual Studio Code](https://code.visualstudio.com/)** 
+- A popular code editor used for developing the game.
+### **[Font Awesome](https://fontawesome.com/)**
+- Font Awesome was used to show the media icons in the footer.
 
 ### **Browser Developer Tools**
-Used for debugging and inspecting the game's behavior in different web browsers.
+- Used for debugging and inspecting the game's behavior in different web browsers.
  
+### **[Balsamiq](https://balsamiq.com/)**
+  - Balsamiq was used to create the [wireframes](<#wireframes>) during the design process.
 
 
-
-## **Testing**
+# **Testing**
     
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### First Time Visitor Goals
+  1. As a first-time users, I want to understand that it is a two player game.
+  - On the page that welcomes users to the web app, there is a how to play button and once clicked, the game instructions appear which lets users know it is a 2 player game.
+  2. As first-time users, we want to understand how to play the game.
+  - This is achieved by the presence of the how to play button present on the page that welcomes players to the game.
+  3. As first-time users, we want to easily navigate and find the game board.
+  - Players can esily see the start game button on the first page which will navigate them to the game board. 
+  4. As first-time users, we want clear instructions on how to make moves and win the game.
+  - This is achieved by the information the how to play button reveals once the how to play button is clicked on both pages
+  5. As first-time users, we want a visually appealing and intuitive interface for an enjoyable gaming experience.
+  - This is achieved by the use of visually appealing images on the background and and the modals
+  6. As first-time users, we want to be able to reset the game if we want to start over.
+  - A reset game button is present on the game screen to enable users perform this action
+  7. As first-time users, we want to easily know which of the players has won or if there is a tie.
+  - Bootstraps modals have been used to achieve achieve this functionality and pass messages accross to users on the game page if theres a win or tie game.
 
    
     
 
 -   #### Returning Visitor Goals
-
-    
+  1. As returning visitors, we want to quickly start a new game without any hassle.
+  - Users can start start new games or reset boards an unlimitedly.
+  2. As returning visitors, we want to easily find the "How to Play" instructions in case theres a need for refresher.
+  - The how to play button on the game page shows a modal popup with instructions to help users with this.
+  3. As returning visitors, we want to see if any updates or improvements have been made to the game since our last visit.
+  - Any updates to the game will be positioned and commi=unticated to users in a visually appealling and intuitive way. 
 
 -   #### Frequent User Goals
-
+  1. As frequent users, We want to compete against another player to test our skills.
+  - There is no limit to which users can play and compete against each other. 
 
 
 ### Further Testing
-
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge. Mozilla Firefox and Safari browsers.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPad Pro, iPad Air, iPhone 13, iPhone 13pro Max, Samsung s20, & iPhone 14 .
+-   A large amount of testing was done to ensure that all links were working appropriately
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 
 ### Bugs
 
 - Encountered bugs when trying to implement a functionality that will change the color of winning cells player mark when win condition has been bet. It wasn't displaying the chosen color at first, and retained the winning color class after reset bnutton had been clicked. 
+![win color bug](assets/images/coloring-bug.png)
 - FIX: Updated the checkwin function in javascript to store the cells into an array, and then added a highlight cells function to add the winning class styling to the winning cells array.
+- Noticed the header appearing a little differently in different phones. Below is the screenshot iphone 13 and iphone 14 pro max models.
+- iPhone 13 Pro Max
+![iphone 13 pro max](assets/images/iphone13-header.jpg)
+- iPhone 14 Pro Max
+![iphone 14 pro max](assets/images/iphone14-header.jpg)
 
-
+Fix: This has not been fixed
 
 
 
 # **Validator Testing**
 
  
-## Deployment
+# **Deployment**
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Nelkon01/tic-tac-toe)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Nelkon01/tic-tac-toe)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Nelkon01/afro_experience_website)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/Nelkon01/tic-tac-toe
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/Nelkon01/tic-tac-toe
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 
-## Credits
+# **Credits**
 
+### Code
 
-
+-   [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive and to utilize bootsrap styling and modals which gave users information popups.
+- [Web Dev Simplified YouTube](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=1896s): This video helped me unbderstand a nice way i wanted to achieve the board styling and the player marks.
 
 ### Content
 
