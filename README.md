@@ -26,9 +26,7 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
     * [**Imagery**](<#imagery>)
 * [**Features**](<#features>)
   * [**Existing Features**](<#existing-features>)
-    * 
-
-    * [**Responsiveness**](<#responsiveness>)
+  * [**Future Features**](<#>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Testing User Stories**](<#testing-user-stories-from-user-experience-ux-section>)
@@ -86,79 +84,54 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
         
     -   ### Imagery
       Imagery is important. the game uses a background image on the game page which goes nicely with the theme and important parts of the game. The images used in the modals to give users any messages are also fit for the whatever message is being passed.
+      ![Background Image](assets/images/background2.webp)
+
       
 
 # **Features**
       
-
-
 ## **Existing Features**
 
-  ### **Navigation Bar**
+  ### **Game Board**
+  The game board is displayed on the webpage, consisting of a 3x3 grid where players can make their moves.
+  ![Game Board](assets/images/game-board.png)
 
+  ### **Player Turns**
+  Players can take turns placing their marks (X or O) on the empty squares of the game board.
+  ![Player Marks](assets/images/marks.png)
 
+  ### **Winning Condition**
+  The game checks for a winning condition where the first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins the game.
+  There is also an added functionality    
+  ![win-condition-example](assets/images/win-condition.png)
 
-  ![Logo](assets/images/logo.webp)
+  ### **Tie Game**
+  If all nine squares on the game board are filled and no player has won, the game ends in a tie.
+  ### **Reset Game**
+  There is a "Reset Game" button that allows players to start a new game, clearing the game board and resetting the scores.
+ 
+  ### **Modal Windows**
+  The game includes modal windows for displaying messages and information, such as the "How to Play" instructions, tie game notification, and winner announcement.
+  ![how to play modal](assets/images/how-to-play.png)
+  ![tie game moadal](assets/images/tie-modal.png)
+  ![win gaame modal](assets/images/winner-modal.png)
+
+  ### **Favicon**
+  The project includes a favicon, a small icon displayed in the browser tab.
+  ![favicon](assets/images/tic-tac-toe.ico)
+  ### **External Dependencies**
+  The project utilizes external libraries, including Bootstrap (CSS and JavaScript) and jQuery.
+  ### **Responsive Design**
+  The webpage is designed to be responsive and adapt to different screen sizes and devices.
 
   - #### Mobile
+  ![mobile screenshot](assets/images/mobile-sc.png)
     
+  - #### Tablets
 
-
-
-  - #### Tablets and Desktop
-
-
-![LargerScreen-nav](assets/images/Larger-nav.png)
-
-### **Hero image**
-
-
-
-- ### Mobile
-    ![Mobile-hero](assets/images/mobile-hero.png)
-
-- ### Desktop
-    ![Desktop-hero](assets/images/desktop-hero.png)
-
-    
-- ### Mobile
-    
- ![Mobile-about](assets/images/Mobile-About.png)
-
-- ### Desktop
-
-
-- ### Desktop
-![Desktop-Featured](assets/images/Desktop-Quotes.png)
-- ### Mobile
-![Mobile-Featured](assets/images/Mobile-Quotes.png)
-
-
-- ### Desktop
-
-
-![gallery](assets/images/pc-gallerypage.png)
-![Gallery page PC](assets/images/pc-gallery2.png)
-
-
-## **Responsiveness**
-
-### Screenshots
-## Mobile
-#### 1. Home Page
-![Homepage Mobile](assets/images/)
-
-
-## Ipad
-### 1. Home Page
-![Homepage page Ipad](assets/images/)
-
-
-## PC
-### 1. Home Page
-![Homepage page PC](assets/images/)
-
-
+  ![Tablets view](assets/images/ipad-sc.png)
+  - #### Desktop
+  ![Desktop View](assets/images/desktop-sc.png)
 
 
 ## **Technologies Used**
