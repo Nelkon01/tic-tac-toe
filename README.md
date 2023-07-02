@@ -26,7 +26,7 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
     * [**Imagery**](<#imagery>)
 * [**Features**](<#features>)
   * [**Existing Features**](<#existing-features>)
-  * [**Future Features**](<#>)
+  * [**Future Features**](<#future-features>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Testing**](<#testing>)
 * [**Testing User Stories**](<#testing-user-stories-from-user-experience-ux-section>)
@@ -39,12 +39,12 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 * [**Acknowledgments**](<#acknowledgements>)
 
 # **Objective**
-
+To fufil the requirements of my portfolio project two, I am developing this web application to demonstrate my competency in buildiong dynamic, interactive Front end web application which also includes understanding user input and control when interacting with a web application. This project will also showcase my attention to details and the importance of thorough testing.
 
 # **User Experience (UX)**
 
--   ## **User stories**
--   ### First Time Visitor Goals:
+- ## **User stories**
+  - ### **First Time Visitor Goals:**
   1. As a first-time users, I want to understand that it is a two player game.
   2. As first-time users, we want to understand how to play the game.
   3. As first-time users, we want to easily navigate and find the game board.
@@ -53,13 +53,13 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
   6. As first-time users, we want to be able to reset the game if we want to start over.
   7. As first-time users, we want to easily know which of the players has won or if there is a tie.
 
-  -   ### Returning Visitor Goals:
+  -   ### **Returning Visitor Goals:**
   1. As returning visitors, we want to quickly start a new game without any hassle.
   2. As returning visitors, we want to easily find the "How to Play" instructions in case theres a need for refresher.
   4. As returning visitors, we want to see if any updates or improvements have been made to the game since our last visit.
 
-- ### Frequent User Goals:
-1. As frequent users, We want to compete against another player to test our skills.
+  - ### **Frequent User Goals:**
+  1. As frequent users, We want to compete against another player to test our skills.
 
 
         
@@ -122,8 +122,7 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
   ### **External Dependencies**
   The project utilizes external libraries, including Bootstrap (CSS and JavaScript) and jQuery.
   ### **Responsive Design**
-  The webpage is designed to be responsive and adapt to different screen sizes and devices.
-
+  The webpage is designed to be responsive and adapt to different screen sizes and devices. 
   - #### Mobile
   ![mobile screenshot](assets/images/mobile-sc.png)
     
@@ -132,18 +131,51 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
   ![Tablets view](assets/images/ipad-sc.png)
   - #### Desktop
   ![Desktop View](assets/images/desktop-sc.png)
+## **Future Features**
+  ### **Single Player Mode**
+  Implement an AI opponent to allow users to play against the computer.
+  ### **Difficulty Levels**
+  Add different difficulty levels for the AI opponent, providing a range of challenges for players.
+  ### **Multiplayer Mode**
+  Enable users to play against each other online, either locally or across different devices.
+  ### **Score Tracking**
+  Implement a scoring system to keep track of wins, losses, and ties for each player.
+  ### **Player Names**
+  Allow players to enter their names or choose from predefined usernames for a personalized experience.
+  ### **Visual Effects**
+  Enhance the game with animations, sound effects, and visual feedback for player moves and game outcomes.
+  ### **Game Statistics**
+  Provide statistics and analytics to track game history, including win/loss ratios and game duration.
+  ### **Undo/Redo Moves**
+  Implement the ability to undo or redo moves during gameplay to provide more flexibility and strategic options.
+  ### **Accessibility Features:**
+  Ensure the game is accessible to users with disabilities by implementing features like keyboard navigation and screen reader support.
+ 
 
 
-## **Technologies Used**
+# **Technologies Used**
 
-### Languages Used
+## **Languages Used**
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [JavaScript]()
+-   [JavaScript](https://www.javascript.com/)
 
-### Frameworks, Libraries & Programs Used
+## **Frameworks, Libraries & Programs Used**
+### **Bootstrap** 
+Used for utilizing pre-designed CSS styles and components for a responsive layout.
+### **jQuery**
+Used for simplifying DOM manipulation and event handling.
+### **Git**
+Used for version control and managing the project's source code.
+### **GitHub**
+Used for hosting the project repository.
 
+### **Visual Studio Code** 
+A popular code editor used for developing the game.
+
+### **Browser Developer Tools**
+Used for debugging and inspecting the game's behavior in different web browsers.
  
 
 
