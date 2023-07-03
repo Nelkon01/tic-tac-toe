@@ -1,6 +1,6 @@
 # **TIC - TAC - TOE**
 
-Project Description
+## Project Description
 
 Tic-Tac-Toe is a simple two-player game, and only two players can play at a time. This game is also known as Noughts and Crosses or Xs and Os game. One player plays with X and the other player plays with O. In this game we have a board consisting of a 3X3 grid, and in this case player 1 is X and Player 2 is O.
 
@@ -39,7 +39,7 @@ To view the live website on GitHub Pages click [Tic Tac Toe](https://nelkon01.gi
 * [**Acknowledgments**](<#acknowledgements>)
 
 # **Objective**
-To fufil the requirements of my portfolio project two, I am developing this web application to demonstrate my competency in buildiong dynamic, interactive Front end web application which also includes understanding user input and control when interacting with a web application. This project will also showcase my attention to details and the importance of thorough testing.
+To fufil the requirements of my portfolio project two, I am developing this web application to demonstrate my competency in building a dynamic, interactive Front end web application which also includes understanding user input and control when interacting with a web application. This project will also showcase my attention to details and the importance of thorough testing.
 
 # **User Experience (UX)**
 
@@ -71,9 +71,9 @@ To fufil the requirements of my portfolio project two, I am developing this web 
     ### PC
     ![PC Wireframe](assets/images/Wireframe.png)
 -   ## **Structure**
-
-   
-
+The web app has 2 pages. 
+[Welcome Page](https://nelkon01.github.io/tic-tac-toe/index.html) is the default landing page that welcomes users to the web app.
+[Game Page](https://nelkon01.github.io/tic-tac-toe/game.html) is the page where the game board is located and all the game functionality. This can be navigated by clicking the start game button.
 
 -   ## **Design**
     -   ### Colour Scheme
@@ -297,7 +297,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 
 -   [Bootstrap 5](https://getbootstrap.com/docs/5.3/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive and to utilize bootsrap styling and modals which gave users information popups.
-- [Web Dev Simplified YouTube](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=1896s): This video helped me unbderstand a nice way i wanted to achieve the board styling and the player marks.
+- [Web Dev Simplified YouTube](https://www.youtube.com/watch?v=Y-GkMjUZsmM&t=1896s): This video helped me understand a nice way i wanted to achieve the board styling and the player marks.
 
 ### Content
 
