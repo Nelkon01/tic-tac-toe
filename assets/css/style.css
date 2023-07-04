@@ -11,12 +11,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 /* Style the heading */
+
 h1 {
   font-size: 40px;
   margin-bottom: 40px;
   font-family: "IM Fell English", sans-serif;
 }
+
 /* Style the buttons on the welcome page */
 .buttons {
   display: flex;
@@ -41,17 +44,20 @@ button:hover {
   transform: translateY(-2px);
 }
 
+/* To hide the game instructions content */
 .hidden {
   display: none;
 }
 
+/* Game Instructions content */
 #instructions-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: justify;
+  justify-content: center;
   margin-top: 40px;
 }
+
 h2 {
   color: #7f535d;
   text-transform: capitalize;

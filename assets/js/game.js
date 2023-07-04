@@ -1,10 +1,7 @@
 const cells = document.querySelectorAll('.cells');
 const resetBtn = document.getElementById('reset');
 let winningCells = null;
-
-
 let currentPlayer = 'Player 1';
-
 
 cells.forEach(cell => {
     cell.addEventListener('click', handleClick);
@@ -43,50 +40,51 @@ function handleClick() {
     // to switch players
     currentPlayer = currentPlayer === 'Player 1' ? 'Player 2' : 'Player 1';
 }
+
 // function to check if win
 function checkWin() {
     // Check for horizontal win
-    if (cells[0].textContent !== '' && cells[0].textContent === cells[1].textContent
-        && cells[1].textContent === cells[2].textContent) {
+    if (cells[0].textContent !== '' && cells[0].textContent === cells[1].textContent &&
+     cells[1].textContent === cells[2].textContent) {
         winningCells = [cells[0], cells[1], cells[2]];
         return true;
     }
-    if (cells[3].textContent !== '' && cells[3].textContent === cells[4].textContent
-        && cells[4].textContent === cells[5].textContent) {
+    if (cells[3].textContent !== '' && cells[3].textContent === cells[4].textContent &&
+     cells[4].textContent === cells[5].textContent) {
         winningCells = [cells[3], cells[4], cells[5]];
         return true;
     }
-    if (cells[6].textContent !== '' && cells[6].textContent === cells[7].textContent
-        && cells[7].textContent === cells[8].textContent) {
+    if (cells[6].textContent !== '' && cells[6].textContent === cells[7].textContent &&
+     cells[7].textContent === cells[8].textContent) {
         winningCells = [cells[6], cells[7], cells[8]];
         return true;
     }
 
     // Check for vertical win
-    if (cells[0].textContent !== '' && cells[0].textContent === cells[3].textContent
-        && cells[3].textContent === cells[6].textContent) {
+    if (cells[0].textContent !== '' && cells[0].textContent === cells[3].textContent &&
+     cells[3].textContent === cells[6].textContent) {
         winningCells = [cells[0], cells[3], cells[6]];
         return true;
     }
-    if (cells[1].textContent !== '' && cells[1].textContent === cells[4].textContent
-        && cells[4].textContent === cells[7].textContent) {
+    if (cells[1].textContent !== '' && cells[1].textContent === cells[4].textContent &&
+     cells[4].textContent === cells[7].textContent) {
         winningCells = [cells[1], cells[4], cells[7]];
         return true;
     }
-    if (cells[2].textContent !== '' && cells[2].textContent === cells[5].textContent
-        && cells[5].textContent === cells[8].textContent) {
+    if (cells[2].textContent !== '' && cells[2].textContent === cells[5].textContent &&
+     cells[5].textContent === cells[8].textContent) {
         winningCells = [cells[2], cells[5], cells[8]];
         return true;
     }
 
     // Check for diagonal win
-    if (cells[0].textContent !== '' && cells[0].textContent === cells[4].textContent
-        && cells[4].textContent === cells[8].textContent) {
+    if (cells[0].textContent !== '' && cells[0].textContent === cells[4].textContent &&
+     cells[4].textContent === cells[8].textContent) {
         winningCells = [cells[0], cells[4], cells[8]];
         return true;
     }
-    if (cells[2].textContent !== '' && cells[2].textContent === cells[4].textContent
-        && cells[4].textContent === cells[6].textContent) {
+    if (cells[2].textContent !== '' && cells[2].textContent === cells[4].textContent &&
+     cells[4].textContent === cells[6].textContent) {
         winningCells = [cells[2], cells[4], cells[6]];
         return true;
     }
@@ -120,6 +118,7 @@ function disableCells() {
         cell.removeEventListener('click', handleClick);
     });
 }
+
 // function to reset game
 resetBtn.addEventListener('click', () => {
     cells.forEach(cell => {
@@ -134,10 +133,3 @@ resetBtn.addEventListener('click', () => {
     document.getElementById('winningMessage').textContent = '';
     winningCells = null;
 });
-
-
-
-
-
-// export functions
-// module.exports = {cells, resetBtn, message, handleClick, currentPlayer};

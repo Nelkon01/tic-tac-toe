@@ -221,7 +221,7 @@ The web app has 2 pages.
 
 ### Further Testing
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge. Mozilla Firefox and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPad Pro, iPad Air, iPhone 13, iPhone 13pro Max, Samsung s20, & iPhone 14 .
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPad Pro, iPad Air, iPhone 13, iPhone 13pro Max, Infinix Note 12, Samsung s20, & iPhone 14.
 -   A large amount of testing was done to ensure that all links were working appropriately
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
@@ -242,6 +242,37 @@ Fix: This has not been fixed
 
 
 # **Validator Testing**
+
+- ### HTML
+Index Page
+![Index page validated result](assets/images/index-validated.png)
+Game Page
+![Game Page Validate](assets/images/game-validated.png)
+
+- ### CSS
+Index Page
+Index Page
+![Index page validated result](assets/images/styles-css-validate.png)
+Game Page
+![Game Page Validate](assets/images/game-css-validate.png)
+
+- ### JS
+- #### Index Page
+![Index page validated result](assets/images/script-js-validate.png)
+- #### Game Page
+![Game Page Validate](assets/images/game-js-validate.png)
+- These warnings appeared of the es6 syntax that was prominent in my code. however the validator did not pick up on any errors.
+
+## Lighthouse Performance Testing
+- ### Welcome page Mobile
+![Lighthouse welcome Ratings Mobile](assets/images/lighthouse-welcome-mobile.png)
+- ### Weclome Page Desktop
+![Lighthouse welcome desktop](assets/images/lighthouse-welcome%20-page.png)
+- ### Game Page Mobile
+![Lighthouse game ratings Mobile](assets/images/lighthouse-game-mobile.png)
+- ### Game Page Desktop
+![Lighthouse desktop Ratings Mobile](assets/images/lighthouse-game.png)
+
 
  
 # **Deployment**
@@ -313,3 +344,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - Bootstrap modal inspriration was gotten from <a href="https://colorlib.com/wp/bootstrap-modals/">colorlib</a>
 - This website was helpful to reduce and resize images <a href="https://www.reduceimages.com/">reduceimages</a>
+- Validator testing programs (w3.org for html and css) Jshint(Javascript)

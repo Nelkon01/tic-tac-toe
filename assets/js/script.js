@@ -1,3 +1,4 @@
+// Function to  wait for DOM to load before running script
 document.addEventListener('DOMContentLoaded', function () {
     const gameInstructions = document.getElementById('instructions-btn');
     const gameStart = document.getElementById('game-start-btn');

@@ -5,11 +5,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background-image: url(../images/background2.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 :root {
   --box-size: 200px;
   --mark: calc(var(--box-size) * 0.9);
@@ -25,6 +27,16 @@ body {
   outline: 2px outset#DAC1A3;
   text-shadow: 2px 2px #D3B47B;
   margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* style the container */
